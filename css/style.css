@@ -13,12 +13,14 @@ body  {
     background-attachment: fixed;
     background-position: center;
     overflow: hidden;
+
 }
 
 .container {
   width: 100%;
   height: auto;
   max-width: 960px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -192,4 +194,66 @@ body  {
 .hide {
     /* visibility: hidden; */
     display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        min-width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .card-header {
+        font-size: 1.5rem;
+    }
+    .card-body {
+        padding: 1rem;
+    }
+    .card-footer {
+        font-size: 1.5rem;
+    }
+    .splash {
+        font-size: 2rem;
+    }
+    .calculating {
+        font-size: 2rem;
+    }
+    .result {
+        font-size: 2rem;
+    }
+
+    #button-calc {
+        font-size: 0.8rem;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        min-width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .card-header {
+        font-size: 1.5rem;
+    }
+    .card-body {
+        padding: 1rem;
+    }
+    .card-footer {
+        font-size: 1.5rem;
+    }
+    .splash {
+        font-size: 2rem;
+    }
+    .calculating {
+        font-size: 2rem;
+    }
+    .result {
+        font-size: 0.5rem;
+    }
+
+    #button-calc {
+        font-size: 0.8rem;
+        width: 45%;
+    }
 }
